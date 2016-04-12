@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Location" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EsA-5M-0MO">
+                                <rect key="frame" x="0.0" y="211" width="600" height="179"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQy-r3-0fz" customClass="CityPickerView" customModule="Location" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="179"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aQy-r3-0fz" firstAttribute="top" secondItem="EsA-5M-0MO" secondAttribute="topMargin" id="0GA-zO-QMm"/>
+                                    <constraint firstAttribute="bottom" secondItem="aQy-r3-0fz" secondAttribute="bottom" id="26c-mv-95g"/>
+                                    <constraint firstItem="aQy-r3-0fz" firstAttribute="bottom" secondItem="EsA-5M-0MO" secondAttribute="bottomMargin" id="3tM-Yo-6WV"/>
+                                    <constraint firstItem="aQy-r3-0fz" firstAttribute="top" secondItem="EsA-5M-0MO" secondAttribute="top" id="8dI-rp-mpz"/>
+                                    <constraint firstItem="aQy-r3-0fz" firstAttribute="top" secondItem="EsA-5M-0MO" secondAttribute="top" id="GoN-0f-CfC"/>
+                                    <constraint firstItem="aQy-r3-0fz" firstAttribute="leading" secondItem="EsA-5M-0MO" secondAttribute="leading" id="GpS-q8-vf1"/>
+                                    <constraint firstAttribute="bottom" secondItem="aQy-r3-0fz" secondAttribute="bottom" id="Hx9-Rm-P2w"/>
+                                    <constraint firstItem="aQy-r3-0fz" firstAttribute="top" secondItem="EsA-5M-0MO" secondAttribute="top" id="Rm9-gp-U5O"/>
+                                    <constraint firstAttribute="trailing" secondItem="aQy-r3-0fz" secondAttribute="trailing" id="UJq-xA-kDK"/>
+                                    <constraint firstAttribute="trailing" secondItem="aQy-r3-0fz" secondAttribute="trailing" id="ZUH-sf-gGk"/>
+                                    <constraint firstItem="aQy-r3-0fz" firstAttribute="trailing" secondItem="EsA-5M-0MO" secondAttribute="trailingMargin" id="adW-J2-frI"/>
+                                    <constraint firstAttribute="trailing" secondItem="aQy-r3-0fz" secondAttribute="trailing" id="dRl-bd-0lh"/>
+                                    <constraint firstItem="aQy-r3-0fz" firstAttribute="leading" secondItem="EsA-5M-0MO" secondAttribute="leading" id="fbZ-pN-hV2"/>
+                                    <constraint firstItem="aQy-r3-0fz" firstAttribute="centerY" secondItem="EsA-5M-0MO" secondAttribute="centerY" id="hTw-9s-w5q"/>
+                                    <constraint firstItem="aQy-r3-0fz" firstAttribute="centerX" secondItem="EsA-5M-0MO" secondAttribute="centerX" id="hcZ-U7-WV6"/>
+                                    <constraint firstItem="aQy-r3-0fz" firstAttribute="leading" secondItem="EsA-5M-0MO" secondAttribute="leadingMargin" id="hd4-4O-QIv"/>
+                                    <constraint firstItem="aQy-r3-0fz" firstAttribute="top" secondItem="EsA-5M-0MO" secondAttribute="top" id="lvA-hf-x0W"/>
+                                    <constraint firstAttribute="bottom" secondItem="aQy-r3-0fz" secondAttribute="bottom" id="nPN-bJ-VgR"/>
+                                    <constraint firstItem="aQy-r3-0fz" firstAttribute="leading" secondItem="EsA-5M-0MO" secondAttribute="leading" id="p0x-Ie-ZPl"/>
+                                    <constraint firstItem="aQy-r3-0fz" firstAttribute="leading" secondItem="EsA-5M-0MO" secondAttribute="leading" id="y68-Xj-lzK"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EsA-5M-0MO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="191" id="1Sf-SO-c84"/>
+                            <constraint firstAttribute="trailing" secondItem="EsA-5M-0MO" secondAttribute="trailing" id="BoC-Xu-CoE"/>
+                            <constraint firstItem="EsA-5M-0MO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FaA-4V-wPG"/>
+                            <constraint firstItem="EsA-5M-0MO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hsl-0i-Ko8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityPickerView" destination="aQy-r3-0fz" id="XdG-ec-Liz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="576" y="442"/>
+        </scene>
+    </scenes>
+</document>
